@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://cs-3337-group-8.github.io/Questivity/" rel="canonical"/>
+<link href="img/favicon.ico" rel="shortcut icon"/>
+<title>Questivity - Questivity LTI</title>
+<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet"/>
+<link href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css" rel="stylesheet"/>
+<link href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css" rel="stylesheet"/>
+<link href="//rsms.me/inter/inter.css" rel="stylesheet" type="text/css"/>
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css"/>
+<link href="css/bootstrap-custom.min.css" rel="stylesheet"/>
+<link href="css/base.min.css" rel="stylesheet"/>
+<link href="css/cinder.min.css" rel="stylesheet"/>
+<link href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/github.min.css" rel="stylesheet"/>
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+<link href="assets/stylesheets/panzoom.css" rel="stylesheet"/></head>
+<body class="homepage">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<!-- Collapsed navigation -->
+<div class="navbar-header">
+<!-- Expander button -->
+<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<!-- Main title -->
+<a class="navbar-brand" href=".">Questivity LTI</a>
+</div>
+<!-- Expanded navigation -->
+<div class="navbar-collapse collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li>
+<a href="db-api/">QuestivityDB</a>
+</li>
+<li>
+<a href="nginx/">NGINX</a>
+</li>
+<li>
+<a href="docker/">Docker</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a docs="" edit="" href="https://github.com/CS-3337-Group-8/Questivity" index.md"="" master=""><i class="fab fa-github"></i> Edit on GitHub</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+<ul class="nav bs-sidenav">
+<li class="first-level active"><a href="#questivity">Questivity</a></li>
+<li class="second-level"><a href="#overview">Overview</a></li>
+<li class="second-level"><a href="#architecture">Architecture</a></li>
+<li class="third-level"><a href="#database-services">Database Services</a></li>
+<li class="third-level"><a href="#web-services">Web Services</a></li>
+<li class="third-level"><a href="#api-services">API Services</a></li>
+<li class="third-level"><a href="#export-services">Export Services</a></li>
+</ul>
+</div></div>
+<div class="col-md-9" role="main">
+<h1 id="questivity">Questivity</h1>
+<p>Welcome to <strong>Questivity</strong>, a gamification platform designed to seamlessly connect with Canvas LMS networks. Our platform enhances learning experiences by integrating gamified elements into educational environments.</p>
+<h2 id="overview">Overview</h2>
+<p>Questivity utilizes the Learning Tools Interoperability (LTI) standard, enabling smooth integration with various Learning Management Systems (LMS). With a focus on user engagement, Questivity aims to foster an interactive learning atmosphere through games, quizzes, and other engaging activities.</p>
+<h2 id="architecture">Architecture</h2>
+<p>Questivity is built using a microservices architecture, allowing for scalability and flexibility. Below is an overview of our service architecture:</p>
+<h3 id="database-services">Database Services</h3>
+<ul>
+<li><strong>Database</strong>: A MySQL database service that stores user data, application state, and more.</li>
+</ul>
+<h3 id="web-services">Web Services</h3>
+<ul>
+<li><strong>Web Server</strong>: An Nginx-based web server that serves the frontend application and static files.</li>
+</ul>
+<h3 id="api-services">API Services</h3>
+<ul>
+<li><strong>QuestivityDB API</strong>: A RESTful API that facilitates communication between the frontend and the database, providing access to essential data and operations.</li>
+</ul>
+<h3 id="export-services">Export Services</h3>
+<ul>
+<li><strong>GD Export</strong>: A service responsible for exporting content from Godot to HTML5, enabling seamless access to gamified experiences in a web browser.</li>
+</ul></div>
+</div>
+<footer class="col-md-12 text-center">
+<hr/>
+<p>
+<small>© 2024 <a href="https://github.com/CS-3337-Group-8" rel="noopener" target="_blank">CS-3337-Group-8</a>
+</small><br/>
+<small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+</p>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap-3.0.3.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>var base_url = "."</script>
+<script src="js/base.js"></script>
+<div aria-hidden="true" aria-labelledby="keyboardModalLabel" class="modal" id="mkdocs_keyboard_modal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+</div>
+<div class="modal-body">
+<table class="table">
+<thead>
+<tr>
+<th style="width: 20%;">Keys</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="help shortcut"><kbd>?</kbd></td>
+<td>Open this help</td>
+</tr>
+<tr>
+<td class="next shortcut"><kbd>n</kbd></td>
+<td>Next page</td>
+</tr>
+<tr>
+<td class="prev shortcut"><kbd>p</kbd></td>
+<td>Previous page</td>
+</tr>
+<tr>
+<td class="search shortcut"><kbd>s</kbd></td>
+<td>Search</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+<script src="assets/javascripts/panzoom.min.js"></script><script src="assets/javascripts/zoompan.js"></script></body>
+</html>
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2024-10-10 22:52:43.394036+00:00
+-->
